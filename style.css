@@ -1,108 +1,149 @@
-html{
-    scroll-behavior: smooth;
-}
-body {
-    background-color: #dedede;
-    padding: 5px;
-    margin: 15px;
-    font-size: 25px;
-    font-family:Arial, sans-serif;
-    display: inline-block;
+body{
+	margin: 1%;
+	padding:1%;
+	background-color: rgba(0,0,255,0.2);
+	font-size: 100%;
+	min-width: 500px;
 
 }
+header, footer{
+  background-color:#0066FF;
+  padding: 1%;
+  margin: 1%;
+}
+header h1{
+	font-size: 3rem;
+	color:rgba(0,0,0,.7);;
 
-h1 {
-    text-align: center;
-    font-family:Arial, sans-serif;
-    font-size: 1.95em;
 }
 
-h2{
-    text-align:center;
-  }
-
-li{
-    margin-top: 20px;
+section{
+  margin:1%;
+    padding:1%;
 }
 
+nav a{
+	display:block;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 35px;
+	text-decoration: none;
+	padding: 2%;
+	margin: 1%;
+}
+
+h1{
+	text-align: center;
+	color:rgba(255,0,0,.7);;
+}
+
+
+.myClass{
+	margin: 0em 1em;
+	padding:.75em;
+	border: 1px solid black;
+	border-radius: .25%;
+
+
+	-webkit-column-count:3;
+	-moz-column-count: 3;
+	column-count:3;
+	
+}
+
+ol{
+	list-style:upper-roman; 
+	margin:1em;
+}
 img{
-    border: 5px solid blue;
-    border-radius: 35px;
-    width: 100%;
-  }
-
-.label{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-main {
-    border: 5px #000 solid;
-    margin: 10px;
+	display: none;
 }
 
-
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+footer{
+	clear: both;
+	text-align:center;
+	text-transform: uppercase;
 }
- img{
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-} 
+@media screen and (min-width:900px) {
 
-.child {
-    position: relative;
-    display: inline-block;
-    border: 5px black solid;
-    margin: 5px;
-    border-radius: 5px;
-} 
-
-
-
-.label {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-} 
-
-.button {
-    display: inline-block;
-    border: 2px solid #000;
-    padding: 5px;
-    border-radius: 25px;
+	header,footer {
+		background-color: rgba(0,0,255,0.2);
+	}*/
+	img {
+		display: inline-block;
+		height: 150px;
+		width: 150px;
+	}
+	#left {
+		float: left;
+		position: absolute;
+		display: inline-block;
+		width: 25%;
+		height: 100%;
+	}
+	#center {
+		display: inline-block;
+		float: right;
+		width: 70%;
+		height: 100%;
+	}
+	
 }
- 
+@media print {
+	body{
+	margin: 1%;
+	padding:1%;
+	font-size: 100%;
+	min-width: 500px;
 
-.button:hover {
-    background-color:#fff;
-} 
+}
+header, footer{
+  padding: 1%;
+  margin: 1%;
+}
+header h1{
+	font-size: 1em;
+}
 
- 
-footer {
-    display: flex;
-    justify-content: center;
-} 
+section{
+  margin:1%;
+    padding:1%;
+}
+
+nav a{
+	display:block;
+
+	text-align: center;
+	text-decoration: none;
+	padding: 2%;
+	margin: 1%;
+}
+
+h1{
+	text-align: center;
+}
 
 
-header {
-    border-radius: 5px;
-    border: 5px #000 solid;
-    margin: 10px;
-} 
+.myClass{
+	margin: 0em 1em;
+	padding:.75em;
+	
+	
+	border: 1px solid black;
+	border-radius: .25%;
+}
 
- 
-.label {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-} 
+ol{
+	list-style:upper-roman; 
+	margin:1em;
+}
+img{
+	display: none;
+}
 
-.child:hover .label {
-    display: block;
-} 
+footer{
+	clear: both;
+	text-align:center;
+	text-transform: uppercase;
+}
